@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-
-if __name__ == "__main__":
-
-    import sys.math
-
-    result = 0
-
-for i in sys.argv:
-    result += int(i)
-
-    print("{}".format(result))
+if _name_ == "_main_":
+    import sys
+    res = 0
+if len(sys.argv) == 1:
+    print("{}".format(int(0)))
+else:
+    for i in range(1, len(sys.argv)):
+        res = res + int(sys.argv[i])
+        print(f"{res}")
