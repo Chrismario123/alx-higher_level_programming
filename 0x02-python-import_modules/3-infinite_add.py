@@ -2,11 +2,13 @@
 
 if __name__ == "__main__":
 
-import sys, math
+    import sys
 
-result = 0
+    import math
+
+    result = 0
 
 for i in sys.argv:
-result += int(i)
+    result += int(i)
 
-print("{}".format(result))
+    print("{}".format(result))
