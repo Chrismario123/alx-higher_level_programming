@@ -2,9 +2,7 @@
 
 if __name__ == "__main__":
 
-    import sys
-
-    import math
+    import sys, math
 
     result = 0
 
