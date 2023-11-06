@@ -18,11 +18,11 @@ new = malloc(sizeof(listint_t));
 if (new == NULL)
 return (NULL);
 new->n = n;
+
 new->next = *head;
 *head = new;
 return (new);
 }
-
 /**
 *is_palindrome - identify if a syngle linked list is palindrome
 *@head: head of listint_t
