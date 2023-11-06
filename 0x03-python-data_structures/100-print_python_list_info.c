@@ -19,13 +19,13 @@ if (size < 0)
 PyErr_Print();
 return;
 }
-printf("[*] Size of the Python List = %d\n", size);
-printf("[*] Allocated = %d\n", ((PyListObject *)p)->allocated);
+printf("[*] Size of the Python List = %ld\n", size);
+printf("[*] Allocated = %ld\n", ((PyListObject *)p)->allocated);
 
 for (elem = 0; elem < size; elem++)
 {
 PyObject *item = PyList_GetItem(p, elem);
 
-printf("Element %d: %s\n", elem, Py_TYPE(item)->tp_name);
+printf("Element %ld: %s\n", elem, Py_TYPE(item)->tp_name);
 }
 }
